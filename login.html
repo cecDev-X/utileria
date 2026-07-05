@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Acceso</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label>Correo Electrónico:</label>
+                <input type="email" id="correo" required>
+                <span id="errorCorreo" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" id="password" required>
+                <span id="errorPassword" class="error"></span>
+                <small>Debe contener mayúscula, minúscula, número, carácter especial y mín 8 caracteres.</small>
+            </div>
+
+            <button type="submit">Ingresar</button>
+            <br><br>
+            <a href="index.html">Volver al Registro</a>
+        </form>
+    </div>
+
+    <script src="js/utileria.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let esValido = true;
+
+            const correo = document.getElementById('correo').value;
+            const password = document.getElementById('password').value;
+
+            if(!validarCorreo(correo)) {
+                document.getElementById('errorCorreo').innerText = "Formato de correo inválido.";
+                esValido = false;
+            } else { document.getElementById('errorCorreo').innerText = ""; }
+
+            if(!validarPassword(password)) {
+                document.getElementById('errorPassword').innerText = "La contraseña no cumple los requisitos de seguridad.";
+                esValido = false;
+            } else { document.getElementById('errorPassword').innerText = ""; }
+
+            if(esValido) {
+                alert("Login exitoso. Pero aun no hay sistemita");
+            }
+        });
+    </script>
+</body>
+</html>
