@@ -67,3 +67,19 @@ console.log(`¿La tarjeta es válida?: ${tarjetaValida}`); // true / false
 const formatoAmex = formatearTarjeta("378211111111111"); 
 console.log(formatoAmex); // "3782 111111 11111" 
 ```
+### 4. Link al video
+https://youtu.be/2_lGkHSMhJ8
+
+### 5. Capturas
+<img width="463" height="543" alt="image" src="https://github.com/user-attachments/assets/e668343b-35e5-4d33-be84-3e0dd3e15058" />
+Se lanzan las validaciones y no deja proceder
+
+<img width="480" height="472" alt="Screenshot 2026-07-04 at 11 53 47 p m" src="https://github.com/user-attachments/assets/4fb9b294-2cc0-4b65-acc2-e00b96297237" />
+Añadimos datos congruentes y nos deja proceder (registro)
+
+<img width="465" height="366" alt="Screenshot 2026-07-04 at 11 54 53 p m" src="https://github.com/user-attachments/assets/a5becce1-7770-4f20-b34a-58d58a5b2232" />
+Introduzco datos basura
+<img width="472" height="363" alt="Screenshot 2026-07-04 at 11 55 22 p m" src="https://github.com/user-attachments/assets/b2667e98-9b02-4c70-beff-b48b53912756" />
+Ahora datos congruentes
+<img width="464" height="367" alt="Screenshot 2026-07-04 at 11 56 04 p m" src="https://github.com/user-attachments/assets/4f5eda8f-1f61-460b-a9ee-bcb2f1045002" />
+Y ya podemos entrar :)
